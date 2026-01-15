@@ -1,0 +1,96 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+Icon?
+
+# Editor/IDE
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# General build outputs
+build/
+bin/
+obj/
+out/
+dist/
+lib/
+logs/
+tmp/
+temp/
+.cache/
+
+# Compiled sources and libraries
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.lo
+*.la
+
+# Executables and debug artifacts
+*.exe
+*.out
+*.app
+*.run
+*.pdb
+*.exp
+*.dSYM/
+
+# Coverage
+coverage/
+.coverage*
+*.gcda
+*.gcno
+*.gcov
+
+# CMake / Make / Ninja
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+*.make
+src/**/makefile
+src/**/Makefile
+build.ninja
+.ninja_log
+.ninja_deps
+
+# Autotools
+.deps/
+.libs/
+configure
+config.status
+config.log
+
+# Qt (generated)
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+# Archives and logs
+*.log
+*.tar
+*.gz
+*.bz2
+*.xz
+*.zip
+*.7z
+
+# Python caches (if present)
+__pycache__/
+*.pyc
+*.pyo
+
+# Docker
+.env
+.docker/
+docker-compose.override.yml
