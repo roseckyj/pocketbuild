@@ -16,9 +16,14 @@ link_directories("${PB_LINK_DIRECTORIES}")
 include_directories("${PB_INCLUDE_DIRECTORIES}")
 include_directories("${FREETYPE_INCLUDE_DIRS}")
 
+# Add compiler flags for debugging
+add_compile_options(-g -gdwarf-3)
+
 # Start you CMakeLists.txt here...
-add_executable(app app.cpp)
-target_link_libraries(app inkview)
+set(APP_SOURCE "app.cpp" CACHE STRING "Main app source file (e.g. app.cpp or app-copy.cpp)")
+
+add_executable(app ${APP_SOURCE})
+target_link_libraries(app inkview curl)
 
 # Set the executable output name to build.app
 set_target_properties(app PROPERTIES OUTPUT_NAME "build.app")

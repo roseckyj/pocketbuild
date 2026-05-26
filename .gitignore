@@ -94,3 +94,4 @@ __pycache__/
 .env
 .docker/
 docker-compose.override.yml
+wpa_supplicant.conf
